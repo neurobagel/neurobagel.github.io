@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Welcome to Neurobagel
 
-You can use the [editor on GitHub](https://github.com/neurobagel/neurobagel.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+The goal of Neurobagel is to make describing and finding neuroimaging data easy.
+Searching across data that live on distributed storage systems is tricky, 
+and the technologies that make it possible are not usually something
+researchers have experience with, or time to learn.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+We build web-based, graphical user interfaces that make these steps easier:
 
-### Markdown
+- [annotate and harmonize demographic data](https://github.com/neurobagel/annotation_tool)
+- [define and find subject level cohort across neuroimaging datasets](https://github.com/neurobagel/concept_query)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+These tools are still in early development but we are excited to 
+share them with the neuroimaging community and are always looking
+for feedback.
 
-```markdown
-Syntax highlighted code block
+Take a look at [our neurobagel github repositories](https://github.com/neurobagel) and 
+[our roadmap](https://github.com/neurobagel/.github/blob/main/profile/roadmap.md) to 
+get a sense of what we are doing at the moment!
+## Watch our demo
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/neurobagel/neurobagel.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[Watch a demo](/demo) of the neurobagel tools in action.
+Also come visit [our OHBM Poster](https://event.fourwaves.com/cbd65d58-69ab-466d-aa7a-a22731980df6/abstracts/38dbc84f-e2e1-4b29-87d4-cdb635ee5487)
