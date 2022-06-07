@@ -7,7 +7,7 @@ permalink: /demo/
 # Welcome to our OHBM Poster demo
 
 Thank you for checking out our OHBM poster.
-Come and take a look at our the neurobagel Git organization and get in touch: https://github.com/neurobagel
+Come and [take a look at our the neurobagel Git organization](https://github.com/neurobagel) and get in touch!
 
 Here is a brief video of our Annotation tool prototype in action:
 
