@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Neurobagel</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="../index.html" class="title">Neurobagel</a>
+				<nav>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../pages/overview.html" class="active">Overview</a></li>
+						<li><a href="../pages/annotation-tool.html">Annotation Tool</a></li>
+						<li><a href="../pages/cohort-definition-tool.html">Cohort Definition Tool</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">Overview</h1>
+					<span class="image fit"><img src="../images/overview-1.jpg" alt="" /></span>
+					<p>The goal of Neurobagel is to make describing and finding neuroimaging data easy. Searching across data that live on distributed storage systems is tricky, and the technologies that make it possible are not usually something researchers have experience with, or time to learn.<br></p>
+					<p>We build web-based, graphical user interfaces that make these steps easier:
+						<ul>
+							<li>Annotate and harmonize phenotypic data</li>
+							<li>Define and find subject-level cohort across neuroimaging datasets</li>
+						</ul>
+					</p>
+					<p>These tools are still in early development but we are excited to share them with the neuroimaging community and are always looking for feedback.</p>
+					<p>Take a look at our neurobagel <a href="https://github.com/neurobagel">github repositories</a> and our roadmap below to get a sense of what we are doing at the moment!</p>
+				</div>
+			</section>
+
+			<section id="roadmap" class="wrapper">
+				<div class="inner">
+					<h2 class="major">Roadmap</h2>
+					
+					<span class="image fit"><img src="../images/roadmap.jpg" alt="" /></span>
+
+					<h2 id="now">Now</h2>
+					<p><strong>Local test deployment</strong> (single-session)</p>
+					<p>What gets done:</p>
+
+					<ul>
+						<li>annotation tool produces graph-ready single-session data output</li>
+						<li>query interface and graph are locally deployable / deployed and talk to each other</li>
+						<li>we use annotation tool to annotate a local single-session dataset and feed it to the graph</li>
+						<li>imaging meta-data (BIDS) are extracted via pyBIDS and merged manually with phenotypic meta-data</li>
+					</ul>
+<p>What&#39;s the point</p>
+<ul>
+<li>working prototye of the annotation tool (get feedback)</li>
+<li>get real user feedback on the query interface and outputs</li>
+</ul>
+<p><strong>Local test deployment</strong> (multi-session)</p>
+<p>What gets done</p>
+<ul>
+<li>annotation tool can deal with several phenotypic files and multiple sessions, integrate information</li>
+<li>query tool and data model understand multi-session data</li>
+<li>we use our tools to annotate a second multi-session dataset and feed it to the graph</li>
+</ul>
+<p>What&#39;s the point</p>
+<ul>
+<li>have a minimally usable prototype locally running for users (search across datasets)</li>
+<li>get user feedback on multi-session search workflow</li>
+</ul>
+<p><strong>Local test deployment</strong> (derivative data)</p>
+<p>What gets done</p>
+<ul>
+<li>annotation tool can integrate derivative information (simplified file format)</li>
+<li>query interface allows searches for specific derivative protocol names</li>
+<li>We use our tools to update data in the graph with derivative info</li>
+</ul>
+<p>What&#39;s the point</p>
+<ul>
+<li>first realistic prototype of our intended search experience for users</li>
+<li>we got a good sense of how the annotation and upload process works</li>
+<li>annotation tool is ready to be used by users</li>
+</ul>
+<h2 id="next">Next</h2>
+<p><strong>Users annotate their own data</strong> (local deployment)</p>
+<p>What gets done</p>
+<ul>
+<li>detailed documentation of the annotation and graph upload process, data model</li>
+<li>locally runnable python BIDS annotator (pyBIDS) is ready to go and documented</li>
+<li>annotation tool is a web app (centrally deployed within institute)</li>
+<li>new web app to handle merging of annotated meta-data and graph upload (basic auth)</li>
+<li>users do the annotation and upload on their own (can add any data)</li>
+</ul>
+<p>What&#39;s the point</p>
+<ul>
+<li>first time the complete workflow is usable (realistic feedback on annotation)</li>
+<li>adding datasets can be done by users, without input from us</li>
+<li>first minimal process that can scale and be deployed at remote sites</li>
+</ul>
+<p><strong>Users annotate their own data</strong> (remote deployment)</p>
+<p>What gets done</p>
+<ul>
+<li>deployment of the stack of services (search, annotation, upload) is well documented</li>
+<li>we help deploy it at a second site (Douglas)</li>
+</ul>
+<p>What&#39;s the point</p>
+<ul>
+<li>get feedback on how easy it is for an institution to run these tools on their hardware</li>
+<li>get feedback from fully naive users (annotation) and on different data types</li>
+</ul>
+<h2 id="later">Later</h2>
+<p><strong>Everything in the browser</strong></p>
+<p>What gets done</p>
+<ul>
+<li>BIDS meta-data extraction is done inside the (a) web app</li>
+</ul>
+<p>What&#39;s the point</p>
+<ul>
+<li>user no longer needs to install and run local python tool, phenotypic and imaging meta-data are merged directly in the tool</li>
+<li>we&#39;ll have a much easier time to find and resolve conflicts between imaging and phenotypic metadata early</li>
+<li>workflow gets easier (fewer steps, fewer tools)</li>
+<li>this can be deployed to the outside, allowing us to get wider feedback</li>
+</ul>
+<h2 id="eventually">Eventually</h2>
+<ul>
+<li>storing dataset access information via datalad</li>
+<li>integrating query results with datalad, to allow users to programmatically gain access to results</li>
+<li>exchanging data between siloed local deployments safely (file based, or smarter)</li>
+<li>public deployment of the graph (open data) as a demo, reference, and target for other development</li>
+<li>deeper representation of derivative data</li>
+</ul>
+
+				</div>
+			</section>			
+
+		</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

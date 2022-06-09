@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Neurobagel - Annotation Tool</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="../index.html" class="title">Neurobagel</a>
+				<nav>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../pages/overview.html">Overview</a></li>
+						<li><a href="../pages/annotation-tool.html" class="active">Annotation Tool</a></li>
+						<li><a href="../pages/cohort-definition-tool.html">Cohort Definition Tool</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h1 class="major">Annotation Tool</h1>
+						<span class="image fit"><img src="../images/annotation_tool_demo.gif" alt="" /></span>
+						<p>The Neurobagel annotation tool allows upload of BIDS phenotypic metadata and guides users through a multistep process that ends in an annotated output file compatible with the our harmonized metadata model and graph database. Once this occurs, a user’s dataset will be queryable alongside other datasets  via our Cohort Definition Tool. The annotation process itself has been simplified via our user interface into two discrete steps: categorization and annotation.</p>
+						<ol>
+							<li>Upload a BIDS data table (e.g. ‘participants.tsv’) and data dictionary (e.g. ‘participants.json’).</li>
+							<li>Link columns in the data table to Neurobagel data categories (subject ID, age, sex, diagnosis, assessment tools). Tools split across multiple columns can be grouped together.</li>
+							<li>Harmonize values found in those categorized columns in the data table.</li>
+							<li>Review newly-annotated data and download a file for entry into our graph database where it can be used by our tool for cross-cohort search and definition.</li>
+						</ol>
+					</div>
+				</section>					
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
